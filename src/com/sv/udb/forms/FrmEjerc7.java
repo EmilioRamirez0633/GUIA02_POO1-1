@@ -46,7 +46,11 @@ public class FrmEjerc7 extends javax.swing.JFrame {
             String text = String.format("<html><div style='display:table'><div><div><strong> %s</strong> "
                 + "</div></div><div style='color:gray'>%s</div></div></html>", 
                     temp.getTitu(), temp.getDesc());
-            model.addRow(new Object[]{text, temp.getFech()});
+            Object[] arre = new Object[2];
+            arre[0] = text;
+            arre[1] = temp.getFech();
+            model.addRow(arre);
+//            model.addRow(new Object[]{text, temp.getFech()});
         }
     }
 

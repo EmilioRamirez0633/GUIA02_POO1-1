@@ -6,7 +6,7 @@
 package com.sv.udb.clases;
 
 /**
- *
+ * POJO
  * @author JMagoSV
  */
 public class Notas {
@@ -19,6 +19,9 @@ public class Notas {
         this.desc = desc;
         this.fech = fech;
     }
+    
+    public Notas()
+    {}
 
     public String getTitu() {
         return titu;

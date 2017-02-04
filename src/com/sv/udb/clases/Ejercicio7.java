@@ -33,7 +33,13 @@ public class Ejercicio7 {
                 while ((line = br.readLine()) != null)
                 {
                     String[] nota = line.split(simb);
-                    resp.add(new Notas(nota[0], nota[1], nota[2]));
+                    Notas objeTemp = new Notas();
+                    objeTemp.setTitu(nota[0]);
+                    objeTemp.setDesc(nota[1]);
+                    objeTemp.setFech(nota[2]);
+                    resp.add(objeTemp);
+                    
+                    //resp.add(new Notas(nota[0], nota[1], nota[2]));
                 }
             }
         }
